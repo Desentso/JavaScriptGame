@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title>JavaScript Game</title>
+	<meta name="viewport" content="width=device-width">
+	<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,700|Roboto+Slab:400,700|Roboto:400,500,700|Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="jsGame.css">
+
+	<script type="text/javascript" src="jsGame.js"></script>
+</head>
+<body>
+
+	<div class="headerCont">
+		<ul class="header">
+			<li class="headerItem"><a href="#">ABOUT</a></li>
+			<li class="headerItem"><a href="#">WORK</a></li>
+			<li class="headerItem"><a href="#">CONTACT</a></li>
+		</ul>
+	</div>
+
+	<div class="app">
+		<div class="cont">
+			<canvas id="canvas" width="465px" height="660px"></canvas>
+		</div>
+	</div>
+
+	<div class="info">
+	    <h2>Instructions</h2>
+	    <h3>Goal: </h3>
+	    <p>Clear the boxes before they get to the bottom. Each round a new row of boxes is added. You score a point when you survive a round.</p>
+	    <h4>Launch the ball with <span class="button spacebar">space</span></h4>
+	    <h4>Aim with pressing left mouse button and moving it &larr;<span class="mouse"><span class="leftBtn"></span><span class="leftBtn rightBtn"></span></span>&rarr;</h4>
+	    <!--<span class="button updown upArr">&uarr;</span>-->
+	    <h4>or with arrow keys <span class="button">&larr;</span><span class="button">&rarr;</span></h4>
+  	</div>
+
+	<div class="project">
+
+	    <div class="rightCont">
+
+		      <h3 class="descTitle right">Technologies Used</h3>
+		      <div class="techBox">
+		        <p class="tech">JavaScript</p>
+		      </div>
+		      <br />
+		      <h3 class="descTitle right">Overview</h3>
+		      <p class="desc right">The game is created with pure Javascript. It is inspired by a popular mobile game called "BBTAN". The game is never-ending. Your goal is to clear the boxes and not let them hit the bottom. The boxes have hit points, when you hit a box with a ball the hit points go down by one, the box disappears when its hit points go to zero. You start with one ball, but can get more balls by hitting the little balls with a plus sign. When all balls have exited through the bottom a new round starts. At the start of a new round, a new row of boxes appears. As the game goes on the new round of boxes gets more hit points. You score a point when you survive one round.
+		      </p>
+		      <br />
+		      <h3 class="descTitle right">Challenges</h3>
+		      <p class="desc right">Creating a good collision-detection was surprisingly difficult. After reading more about the concept and tutorials I got it working, although it still has some weird bugs when the balls hit the boxes in specific angles and corners.</p>
+		      <p class="desc right">I made some poor desgin choices at the start which made it really hard to update features and debug e.g collison-detection.</p>
+	    </div>
+  	</div>
+
+</body>
+</html>
