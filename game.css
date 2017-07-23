@@ -1,0 +1,159 @@
+body {
+  color: #333;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+  background-color: #1d1f20;
+}
+
+a {
+  color: #efefef;
+  text-decoration: none;
+}
+
+.header {
+  float:right;
+  list-style-type: none;
+  width: 20%;
+  margin-right: 10%;
+  padding-top: 20px;
+}
+
+.headerItem{
+  float: left;
+  margin-left: 30px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  position: relative;
+  color: white;
+}
+
+.headerItem:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #efefef;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.25s ease-in-out 0s;
+  transition: all 0.25s ease-in-out 0s;
+}
+
+.headerItem:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.headerCont {
+	width: 100%;
+	height: 90px;
+}
+
+.app {
+	width: 100%;
+	margin-top: 50px;
+}
+
+.cont {
+	width: 465px;
+	margin: auto;
+}
+
+#canvas {
+  background-color: #1d1f20;
+  display: block;
+}
+
+.project {
+	width: 90%;
+	max-width: 700px;
+	color: #eee;
+	margin: auto;
+	margin-top: 150px;
+}
+
+.techBox {
+	width: 100%;
+	height: 50px;
+}
+
+.tech {
+	border: 2px solid #eee;
+	padding: 6px 10px;
+	border-radius: 3px;
+	float: left;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+
+
+
+
+
+.info {
+  displ ay: inline-block;
+  margin: auto;
+  width: 465px;
+  color: #efefef;
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #eee;
+  padding: 5px 5px;
+  border-radius: 3px;
+  border-bottom: 2px solid #ccc;
+  background-color: #fafafa;
+  margin-left: 5px;
+  color: #333;
+}
+
+.spacebar {
+  width: 130px;
+}
+
+.updown {
+  padding: 5px 9px;
+}
+
+.upArr {
+  position: relative;
+  left: 166px;
+  top: 15px;
+}
+
+.mouse {
+  display: inline-block;
+  border: 1px solid #ccc;
+  height: 50px;
+  width: 35px;
+  border-radius: 20px 20px 15px 15px; 
+  background-color: #fafafa;
+  position: relative;
+  top: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.leftBtn {
+  display: inline-block;
+  float: left;
+  height: 20px;
+  width: 50%;
+  border-radius: 20px 0 0 0;
+  background-color: #ccc;
+  border-bottom: 1px solid #ccc
+}
+
+.rightBtn {
+  background-color: #fafafa;
+  border-radius: 0 20px 0 0;
+  border-bottom: 1px solid #ccc;
+}
